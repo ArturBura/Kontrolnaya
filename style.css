@@ -1,0 +1,112 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    max-width: 100%;
+}
+
+body{
+    width: 100%;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0e9e6;
+}
+
+h1{
+    font-family: "Sour Gummy", sans-serif;
+    font-weight:900;
+    font-size: 42px;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.first {
+    flex-direction: column;
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.first p{
+    width: 90%;
+    font-weight:300;
+    font-size: 42px;
+}
+
+.buttoms{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttom {
+    padding: 10px;
+    background-color: orange;
+    border-radius: 24px;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+    font-size: large;
+}
+
+footer {
+    background-color: grey;
+}

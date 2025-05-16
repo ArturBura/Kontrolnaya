@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Карусель "Я хочу стать врачом"</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper {
+      width: 100%;
+      max-width: 600px;
+      height: 500px;
+      margin: 40px auto;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .swiper-slide {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+    .caption {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+  <div>Я дуже люблю дивитися фільми. Для мене це не просто розвага, а справжній спосіб відпочити, відволіктися від повсякденних справ і зануритися в інший світ. Кожен фільм — це окрема історія, нові герої, емоції та враження. Мені подобається, що через кіно можна пережити різні почуття: сміятися, сумувати, дивуватися й навіть замислитися над чимось важливим.
+
+Я дивлюся фільми різних жанрів — усе залежить від настрою. Іноді хочеться легкої комедії, а іноді — серйозної драми чи захопливого трилера. Кіно допомагає краще розуміти інших людей, побачити світ з різних боків і просто приємно провести час.</div>
+  <!-- Карусель -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <!-- Слайд 1 -->
+      <div
+        class="swiper-slide"
+        style="background-image: url(img/Без\ названия\ \(1\).jfif)"
+      >
+        <div class="caption">Я люблю дивитися фільми</div>
+      </div>
+      <!-- Слайд 2 -->
+      <div
+        class="swiper-slide"
+        style="background-image: url(img/Без\ названия\ \(2\).jfif)"
+      >
+        <div class="caption">Тому що вони цікаві</div>
+      </div>
+      <!-- Слайд 3 -->
+      <div
+        class="swiper-slide"
+        style="background-image: url(img/Без\ названия\ \(3\).jfif)"
+      >
+        <div class="caption">І вони мені подобаються</div>
+      </div>
+     
+    </div>
+    <!-- Навигация -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+    });
+  </script>
+</body>
+</html>
